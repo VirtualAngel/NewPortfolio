@@ -1,6 +1,14 @@
 ---
 const pageTitle = 'ABOUT';
 
+const identity = {
+  firstName: "Angela",
+  country: "the U.S.",
+  occupation: "Frontend Developer & Web Designer",
+  hobbies: ["Graphic Creation", "Watching Korean Dramas", "Game Development"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "Angular", "Astro", "Web Design"];
 ---
 
 <html lang="en">
@@ -20,6 +28,19 @@ const pageTitle = 'ABOUT';
         <a href="/contact/">Contact</a>
 
 		<h1>{pageTitle}</h1>
+
+        <p>Here are a few facts about me:</p>
+            <ul>
+                <li>My name is {identity.firstName}.</li>
+                <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+                {identity.hobbies.length >= 3 &&
+                    <li>Three of my hobbies are: {identity.hobbies[0]}, {identity.hobbies[2]}, and {identity.hobbies[1]}</li>
+                }
+            </ul>
+                <p>My skills are:</p>
+            <ul>
+                {skills.map((skill) => <li>{skill}</li>)}
+            </ul>
 
         <p>As a front-end developer, my unwavering passion for web development drives me to shape intricate ideas into captivating digital experiences. The boundless possibilities of the digital realm captivate me, leading me to specialize in crafting visually appealing websites that offer seamless user interactions. Through experimenting with cutting-edge technologies and distinctive design patterns, I consistently strive to create extraordinary user experiences, ensuring a delightful digital journey.</p>
 
