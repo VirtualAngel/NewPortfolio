@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = 'BLOG'
 ---
 <html lang="en">
@@ -8,12 +11,7 @@ const pageTitle = 'BLOG'
     <title>Astro</title>
   </head>
   <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/skills/">Skills</a>
-        <a href="/portfolio/">Portfolio</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
+        <Navigation />
 
     <h1>{pageTitle}</h1>
     <p>This is where I will post about my journey learning Astro.</p>
@@ -23,4 +21,5 @@ const pageTitle = 'BLOG'
       <li><a href="/posts/post-3/">Post 3</a></li>
     </ul>
   </body>
+    <Footer />
 </html>

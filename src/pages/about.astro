@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = 'ABOUT';
 
 const identity = {
@@ -20,12 +23,7 @@ const skills = ["HTML", "CSS", "JavaScript", "Angular", "Astro", "Web Design"];
 		<title>About</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/skills/">Skills</a>
-        <a href="/portfolio/">Portfolio</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
+        <Navigation />
 
 		<h1>{pageTitle}</h1>
 
@@ -49,4 +47,5 @@ const skills = ["HTML", "CSS", "JavaScript", "Angular", "Astro", "Web Design"];
 
         <p>My path as a front-end developer is defined by an ardent commitment to crafting exceptional web experiences. By merging aesthetics, innovation, and user-centric design, my goal is to forge digital masterpieces that resonate profoundly with every user. With enthusiasm, I welcome the evolving challenges of web development, equipping myself to contribute to a more accessible and vibrant digital landscape. This journey takes a pivotal turn in 2025 as I work toward obtaining my Bachelor's Degree in graphic design from Southern New Hampshire University, marking a stride towards specializing in web design.</p>
 	</body>
+    <Footer />
 </html>

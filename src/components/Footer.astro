@@ -1,0 +1,24 @@
+---
+---
+
+   
+
+<span id="currentYear"></span> <br />
+     All Rights Reserved
+
+
+<script>
+    window.addEventListener('load', onLoad);
+
+    function onLoad () {
+      const copyrightEl = document.getElementById('currentYear');
+
+      if (copyrightEl) {
+        const currentYear = new Date().getFullYear();
+        const copyrightText = ` &copy; 2022 - ${currentYear} dev-angela.com`;
+
+        copyrightEl.innerHTML = copyrightText;
+      }
+    }
+  </script>
+

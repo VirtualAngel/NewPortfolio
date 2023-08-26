@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
 const pageTitle = 'WELCOME'
 ---
 
@@ -11,15 +14,12 @@ const pageTitle = 'WELCOME'
 		<title>Astro</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/skills/">Skills</a>
-        <a href="/portfolio/">Portfolio</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact/">Contact</a>
+        <Navigation />
 
 		<h1>{pageTitle}</h1>
 
 		<p>As a passionate frontend developer, I craft captivating web experiences through innovation, modern designs, and user-centric approaches. With a focus on accessibility, I ensure all users have a delightful journey. By constantly learning and staying updated, I am committed to making the web more enjoyable and inclusive for everyone.</p>
 	</body>
+
+		<Footer />
 </html>
